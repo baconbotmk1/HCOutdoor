@@ -1,0 +1,8 @@
+﻿Forest-banner - https://www.rawpixel.com/image/432553/free-photo-image-pine-tree-summer-forest-woodland
+
+logo.png - Source: HC
+logo-icon-V4-1.ico - Source: Self made based on "logo.png"
+
+page-devider.png - Source: found on google (No direct link) (Modified)
+top-page.png - Source: Self made based on "page-devider.png"
+Bottom-page.png - Source: Self made based on "page-devider.png"

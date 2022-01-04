@@ -24,6 +24,17 @@ namespace HCOutdoor
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSession(options => {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                //options.IdleTimeout = TimeSpan.FromSeconds(30);
+            });
+            //services.AddScoped<Database>();
+            //services.AddScoped<MailSettings>();
+            services.AddMemoryCache();
+            services.AddMvc();
+
+            services.AddHttpContextAccessor();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +54,7 @@ namespace HCOutdoor
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

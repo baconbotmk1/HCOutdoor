@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,7 +14,6 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3 hco-nav-banner">
             <div class="hco-nav-image"><a href="/Forside"><img src="~/pictures/logo.png" /></a></div>
-            @*<div class="hco-nav-image"><a href="/Forside"><img src="~/pictures/temp-logo.png" /></a></div>*@
             <div class="container hco-nav-menu">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -21,19 +22,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="hco-nav-menu-item">
                         <li class="nav-item hco-nav-item-forside">
-                            <a class="nav-link" asp-page="/Index">Forside</a>
+                            <a class="nav-link @((Context.Session.GetString("page") == "1" || Context.Session.GetString("page") == null || Context.Session.GetString("page") == "") ? "hco-current-page" : "")" asp-page="/Index">Forside</a>
                         </li>
                         <li class="nav-item hco-nav-item-about">
-                            <a class="nav-link" asp-page="/Om-Mig">Om mig</a>
+                            <a class="nav-link @(Context.Session.GetString("page") == "3" ? "hco-current-page" : "")" asp-page="/Om-Mig">Om mig</a>
                         </li>
                         <li class="nav-item hco-nav-item-package">
-                            <a class="nav-link" asp-page="/Events">Priser på events</a>
+                            <a class="nav-link @(Context.Session.GetString("page") == "4" ? "hco-current-page" : "")" asp-page="/Events">Priser på events</a>
                         </li>
                         <li class="nav-item hco-nav-item-Contact">
-                            <a class="nav-link" asp-page="/Kontakt">Kontakt</a>
+                            <a class="nav-link @(Context.Session.GetString("page") == "5" ? "hco-current-page" : "")" asp-page="/Kontakt">Kontakt</a>
                         </li>
                         <li class="nav-item hco-nav-item-pics">
-                            <a class="nav-link" asp-page="/Billeder">Billeder</a>
+                            <a class="nav-link @(Context.Session.GetString("page") == "2" ? "hco-current-page" : "")" asp-page="/Billeder">Billeder</a>
                         </li>
                     </ul>
                 </div>
