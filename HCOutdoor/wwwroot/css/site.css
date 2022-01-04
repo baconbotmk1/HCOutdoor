@@ -89,7 +89,21 @@ header {
     flex-direction: column;
     justify-content: center;
     padding: 0px;
+    margin: 0px !important;
 }
+
+
+.hco-page-devider {
+    height: 50%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+    .hco-page-devider img {
+        /*margin-top: 50%;*/
+        width: 100vw;
+    }
+
 
 .hco-nav-menu-item {
     justify-content: center;
@@ -180,11 +194,20 @@ header {
     background-color: white;
 }
 
-.hco-page-devider{
-    max-width:100vw;
-}
-
 
 /*#endregion*/
 
+/*#region Footer*/
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+    .footer a {
+        color: #fff;
+    }
+    .footer a:hover{
+        color:#f0f0f0;
+    }
+/*#endregion*/
 /*#endregion*/
