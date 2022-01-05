@@ -222,8 +222,49 @@ body {
 
 .hco-contact-form {
     width: 50%;
-    margin:auto;
+    margin: auto;
 }
+
+.hco-contact-form-item input, #hco-contact-message {
+    border-radius: 10px;
+    border: 0px;
+    outline: none;
+    background-color: #fff;
+    border: 2.5px solid #83b94d;
+    padding: 7.5px 15px;
+    color: black;
+}
+
+#hco-contact-message {
+    min-height: 200px;
+}
+
+.hco-contact-form-single, .hco-contact-form-double {
+    margin: 20px 0px;
+}
+
+.hco-contact-submit {
+    display: block;
+    margin: 20px auto 0px auto;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #70d541;
+    outline:none;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    font-size:20px;
+    font-weight:700;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
 /*#endregion*/
 
 /*#region Footer*/
@@ -243,6 +284,11 @@ body {
         .footer a:hover {
             color: #f0f0f0;
         }
+
+
+.hco-footer-blur {
+    backdrop-filter: blur(2px);
+}
 /*#endregion*/
 
 /*#endregion*/

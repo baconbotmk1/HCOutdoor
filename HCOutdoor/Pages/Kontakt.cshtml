@@ -3,7 +3,6 @@
 @{
     ViewData["Title"] = "Kontakt";
 }
-@*Name - Email - Subject - Message*@
 
 <div class="hco-contact-container">
     <div class="hco-contact-title"><h1>Kontakt mig</h1></div>
@@ -12,20 +11,24 @@
             <div class="hco-contact-form-double">
                 <div class="hco-contact-form-item">
                     <label for="hco-contact-name">Navn</label>
-                    <input type="text" placeholder="F.eks.: Poul Poulsen" id="hco-contact-name" />
+                    <input type="text" id="hco-contact-name" />
                 </div>
                 <div class="hco-contact-form-item">
                     <label for="hco-contact-email">Email</label>
-                    <input type="text" placeholder="F.eks.: poul@mail.dk" id="hco-contact-email" />
+                    <input type="text" id="hco-contact-email" />
                 </div>
             </div>
-            <div class="hco-contact-form-item">
-                <label for="hco-contact-topic">Emne</label>
-                <input type="text" placeholder="F.eks.: Bestilling af pakke" id="hco-contact-topic" />
+            <div class="hco-contact-form-single">
+                <div class="hco-contact-form-item">
+                    <label for="hco-contact-topic">Emne</label>
+                    <input type="text" id="hco-contact-topic" />
+                </div>
             </div>
-            <div class="hco-contact-form-item">
-                <label for="hco-contact-message">Besked</label>
-                <input type="text" placeholder="Hej Hans Christian..." id="hco-contact-message" />
+            <div class="hco-contact-form-single">
+                <div class="hco-contact-form-item">
+                    <label for="hco-contact-message">Besked</label>
+                    <textarea id="hco-contact-message"></textarea>
+                </div>
             </div>
             <input type="submit" name="Send" class="hco-contact-submit" />
         </form>
