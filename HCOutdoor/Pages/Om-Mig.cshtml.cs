@@ -10,9 +10,16 @@ namespace HCOutdoor.Pages
 {
     public class ForsideModel : PageModel
     {
+        //[BindProperty]
+        //public string NewMessage { get; set; }
         public void OnGet()
         {
             HttpContext.Session.SetString("page", "3");
+        }
+
+        public void OnPost()
+        {
+
         }
     }
 }

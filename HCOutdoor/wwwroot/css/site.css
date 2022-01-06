@@ -199,6 +199,12 @@ body {
 
 /*#endregion*/
 
+/*#region About*/
+.hco-about-title h1{
+    text-align:center;
+}
+/*#endregion*/
+
 /*#region Contact*/
 .hco-contact-title h1 {
     text-align: center;
