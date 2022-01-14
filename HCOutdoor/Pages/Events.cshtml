@@ -1,5 +1,25 @@
 ﻿@page
 @model HCOutdoor.Pages.PakkerModel
 @{
-    ViewData["Title"] = "Pakker";
+    ViewData["Title"] = "Events";
 }
+
+<div class="hco-package-container">
+    <div class="hco-packages">
+        <div class="hco-package-item">
+            <div class="hco-package-title"><h2><strong>Lille event</strong></h2></div>
+            <div class="hco-package-img"><a href="/Events/Small-package"><img src="~/pictures/Picture-comingsoon.png" /></a></div>
+            <div class="hco-package-btn"><a href="/Events/Large-package">Læs mere</a></div>
+        </div>
+        <div class="hco-package-item">
+            <div class="hco-package-title"><h2><strong>Mellem event</strong></h2></div>
+            <div class="hco-package-img"><a href="/Events/Medium-package"><img src="~/pictures/Picture-comingsoon.png" /></a></div>
+            <div class="hco-package-btn"><a href="/Events/Medium-package">Læs mere</a></div>
+        </div>
+        <div class="hco-package-item">
+            <div class="hco-package-title"><h2><strong>Stort event</strong></h2></div>
+            <div class="hco-package-img"><a href="/Events/Large-package"><img src="~/pictures/Picture-comingsoon.png" /></a></div>
+            <div class="hco-package-btn"><a href="/Events/Large-package">Læs mere</a></div>
+        </div>
+    </div>
+</div>
