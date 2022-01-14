@@ -5,32 +5,38 @@
 }
 
 <div class="hco-contact-container">
-    <div class="hco-contact-title"><h1>Kontakt mig</h1></div>
-    <div class="hco-contact-form">
-        <form method="post">
-            <div class="hco-contact-form-double">
-                <div class="hco-contact-form-item">
-                    <label for="hco-contact-name">Navn</label>
-                    <input type="text" id="hco-contact-name" />
+    <div class="hco-contact-box">
+        <div class="hco-contact-form">
+            <div class="hco-contact-title"><h1>Kontakt mig</h1></div>
+            <form method="post">
+                <div class="hco-contact-form-double">
+                    <div class="hco-contact-form-item">
+                        <label for="hco-contact-name">Navn</label>
+                        <input type="text" id="hco-contact-name" />
+                    </div>
+                    <div class="hco-contact-form-item">
+                        <label for="hco-contact-email">Email</label>
+                        <input type="text" id="hco-contact-email" />
+                    </div>
                 </div>
-                <div class="hco-contact-form-item">
-                    <label for="hco-contact-email">Email</label>
-                    <input type="text" id="hco-contact-email" />
+                <div class="hco-contact-form-single">
+                    <div class="hco-contact-form-item">
+                        <label for="hco-contact-topic">Emne</label>
+                        <input type="text" id="hco-contact-topic" />
+                    </div>
                 </div>
-            </div>
-            <div class="hco-contact-form-single">
-                <div class="hco-contact-form-item">
-                    <label for="hco-contact-topic">Emne</label>
-                    <input type="text" id="hco-contact-topic" />
+                <div class="hco-contact-form-single">
+                    <div class="hco-contact-form-item">
+                        <label for="hco-contact-message">Besked</label>
+                        <textarea id="hco-contact-message"></textarea>
+                    </div>
                 </div>
-            </div>
-            <div class="hco-contact-form-single">
-                <div class="hco-contact-form-item">
-                    <label for="hco-contact-message">Besked</label>
-                    <textarea id="hco-contact-message"></textarea>
-                </div>
-            </div>
-            <input type="submit" name="Send" class="hco-contact-submit" />
-        </form>
+                <input type="submit" name="Send" class="hco-contact-submit" />
+            </form>
+        </div>
+        <div class="hco-contact-details">
+            <div class="hco-contact-info"><a href="tel:+4530483258"><img src="~/pictures/Phone.png" />+45 30 48 32 58</a></div>
+            <div class="hco-contact-info"><a href="mailto:kontakt@hcoutdoor.dk"><img src="~/pictures/Mail.png" />kontakt@hcoutdoor.dk</a></div>
+        </div>
     </div>
 </div>

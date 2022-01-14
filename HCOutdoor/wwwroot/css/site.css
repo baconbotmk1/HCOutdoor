@@ -198,7 +198,7 @@ body {
     }
 
 .hco-container {
-    padding: 10px 0px; 
+    padding: 10px 0px;
 }
 /*#endregion*/
 
@@ -296,8 +296,41 @@ input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #fff inset !important;
 }
 
-/*#endregion*/
+.hco-contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.hco-contact-form {
+    width: 70%;
+}
+
+.hco-contact-details {
+    width:20%;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.hco-contact-info {
+    margin: 25px 0px;
+}
+
+    .hco-contact-info a {
+        color: black;
+    }
+
+        .hco-contact-info a:hover {
+            color: black;
+            text-decoration:underline;
+        }
+
+        .hco-contact-info a img {
+            height: 32px;
+            margin-right: 10px;
+        }
+/*#endregion*/
 /*#region events*/
 .hco-packages {
     display: flex;
@@ -308,7 +341,7 @@ input:-webkit-autofill:active {
     width: 33%;
 }
 
-.hco-package-title h2{
+.hco-package-title h2 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -322,7 +355,7 @@ input:-webkit-autofill:active {
 .hco-package-btn a {
     display: block;
     padding: 7.5px 15px;
-    font-size:18px;
+    font-size: 18px;
     margin: auto;
     color: black;
     background-color: #a8e072;
